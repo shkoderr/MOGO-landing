@@ -30,7 +30,7 @@ $(function() {
 
     var $this = $(this),
         blockId = $this.data('scroll'),
-        blockOffset = $(blockId).offset().top;
+        blockOffset = $(blockId).offset().top - 50;
 
         $("#nav a").removeClass("active");
         $this.addClass("active");
@@ -47,6 +47,24 @@ $(function() {
 
     $(this).toggleClass("active");
     $("nav").toggleClass("active");
+  });
+
+
+  //Collapse menu//
+  $(".nav__link").click(function(event) {
+
+    $(".nav")
+      .removeClass("active");
+    $(".nav-toggle")
+      .removeClass("active");
+  });
+
+  $(".header__logo").click(function(event) {
+
+    $(".nav")
+      .removeClass("active");
+    $(".nav-toggle")
+      .removeClass("active");
   });
 
 

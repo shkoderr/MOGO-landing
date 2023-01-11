@@ -66,7 +66,7 @@ hr {
 
 .intro__title {
     color: #fff;
-    font-size: 150px;
+    font-size: 100px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1;
@@ -86,7 +86,7 @@ hr {
     margin-bottom: 20px;
 
     font-family: 'Kaushan Script', cursive;
-    font-size: 72px;
+    font-size: 52px;
     color: #fff;
 }
 
@@ -130,6 +130,7 @@ hr {
     font-size: 30px;
     font-weight: 700;
     color: #fff;
+    cursor: pointer;
 }
 
 
@@ -332,6 +333,12 @@ hr {
 .slider__num {
     font-size: 24px;
     font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
+
+.slider__num hover {
+  cursor: pointer;
 }
 
 /*Section*/
@@ -698,7 +705,7 @@ hr {
     display: block;
     width: 210px;
     height: 210px;
-    border: 2px solid #95e1d3;
+    border: 4px solid #95e1d3;
     border-radius: 50%;
     position: absolute;
     top: 0;
@@ -1286,11 +1293,11 @@ hr {
     
   /* Intro */
   .intro__suptitle {
-    font-size: 52px;
+    font-size: 42px;
   }
 
   .intro__title {
-    font-size: 120px;
+    font-size: 100px;
   }
 
   /* Reviews */
@@ -1391,6 +1398,10 @@ hr {
   /* Intro */
   .intro {
     min-height: 650px;
+  }
+
+  .intro__title {
+    font-size: 70px;
   }
 
 /* Header */
