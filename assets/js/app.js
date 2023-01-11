@@ -4,7 +4,7 @@ $(function() {
       introH = $("#intro").innerHeight(),
       scrollOffset = $(window).scrollTop();
 
-      /* Fixed Header */
+    /* Fixed Header */
     checkScroll(scrollOffset);
 
   $(window).on("scroll", function () {
@@ -29,7 +29,7 @@ $(function() {
     event.preventDefault();
 
     var $this = $(this),
-        blockId = $(this).data('scroll'),
+        blockId = $this.data('scroll'),
         blockOffset = $(blockId).offset().top;
 
         $("#nav a").removeClass("active");
@@ -49,5 +49,27 @@ $(function() {
     $("nav").toggleClass("active");
   });
 
+
+  /* Collapse */
+  $("[data-collapse]").on("click", function(event) {
+    event.preventDefault();
+
+    var $this = $(this),
+    blockId = $this.data('collapse');
+
+    $this.toggleClass("active");
+
+
+  });
+
+
+  /* Slider */
+  $("[data-slider]").slick({
+    infinity: true,
+    fade: false,
+    slidesToShow: 1,
+    slidesToScroll: 1
+
+  });
 
 });

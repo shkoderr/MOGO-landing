@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <script src="https://kit.fontawesome.com/24a5f6205d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>Mogo</title>
   </head>
   <body>
@@ -255,12 +256,12 @@
             <div class="wedo__item">
 
               <div class="accordion">
-                <div class="accordion__item">
+                <div class="accordion__item" data-collapse="#wedo_1">
                   <div class="accordion__header">
                     <img class="accordion__icon" src="assets/images/services/photography.png" alt="">
                     <div class="accordion__title">Photography</div>
                   </div>
-                  <div class="accordion__content">
+                  <div class="accordion__content" id="wedo_1">
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at commodi consectetur consequatur
                       distinctio dolorem doloremque expedita, ipsam libero molestias officiis pariatur praesentium quam
@@ -269,12 +270,12 @@
                   </div>
                 </div>
 
-                <div class="accordion__item active">
+                <div class="accordion__item active" data-collapse="#wedo_2">
                   <div class="accordion__header">
                     <img class="accordion__icon" src="assets/images/services/creativity.png" alt="">
                     <div class="accordion__title">Creativity</div>
                   </div>
-                  <div class="accordion__content">
+                  <div class="accordion__content" id="wedo_2">
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at commodi consectetur consequatur
                       distinctio dolorem doloremque expedita, ipsam libero molestias officiis pariatur praesentium quam
@@ -283,12 +284,12 @@
                   </div>
                 </div>
 
-                <div class="accordion__item">
+                <div class="accordion__item" data-collapse="#wedo_3">
                   <div class="accordion__header">
                     <img class="accordion__icon" src="assets/images/services/webdesign.png" alt="">
                     <div class="accordion__title">Web Design</div>
                   </div>
-                  <div class="accordion__content">
+                  <div class="accordion__content" id="wedo_3">
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at commodi consectetur consequatur
                       distinctio dolorem doloremque expedita, ipsam libero molestias officiis pariatur praesentium quam
@@ -309,17 +310,31 @@
         <div class="container">
 
           <div class="reviews">
-            <a class="reviews__btn reviews__btn--prev" href="#">Prev</a>
-            <a class="reviews__btn reviews__btn--next" href="#">Next</a>
 
-            <div class="reviews__item">
-              <img class="reviews__photo" src="assets/images/avatar.png" alt="" />
-              <div class="reviews__text">
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur debitis doloremque exercitationem
-                ipsam nisi repudiandae sit."
+            <div data-slider>
+              <div>
+                <div class="reviews__item">
+                  <img class="reviews__photo" src="assets/images/avatar.png" alt="" />
+                  <div class="reviews__text">
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur debitis doloremque exercitationem
+                    ipsam nisi repudiandae sit."
+                  </div>
+                  <div class="reviews__author">Jon Doe</div>
+                </div>
               </div>
-              <div class="reviews__author">Jon Doe</div>
-            </div>
+
+              <div>
+                <div class="reviews__item">
+                  <img class="reviews__photo" src="assets/images/avatar.png" alt="" />
+                  <div class="reviews__text">
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur debitis doloremque exercitationem
+                    ipsam nisi repudiandae sit."
+                  </div>
+                  <div class="reviews__author">Jon Doe</div>
+                </div>
+              </div>
+            </div> <!--slider-->
+
           </div>
         </div>
       </div>
@@ -539,17 +554,32 @@
         <div class="container">
 
           <div class="reviews">
-            <a class="reviews__btn reviews__btn--prev" href="#">Prev</a>
-            <a class="reviews__btn reviews__btn--next" href="#">Next</a>
-            <div class="reviews__item">
-              <img class="reviews__photo" src="assets/images/avatar.png" alt="" />
-              <div class="reviews__text">
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur debitis doloremque exercitationem
-                ipsam nisi repudiandae sit."
+
+            <div data-slider>
+              <div>
+                <div class="reviews__item">
+                  <img class="reviews__photo" src="assets/images/avatar.png" alt="" />
+                  <div class="reviews__text">
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur debitis doloremque exercitationem
+                    ipsam nisi repudiandae sit."
+                  </div>
+                  <div class="reviews__author">Jon Doe</div>
+                </div>
               </div>
-              <div class="reviews__author">Jon Doe</div>
-            </div>
-          </div>
+
+              <div>
+                <div class="reviews__item">
+                  <img class="reviews__photo" src="assets/images/avatar.png" alt="" />
+                  <div class="reviews__text">
+                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur debitis doloremque exercitationem
+                    ipsam nisi repudiandae sit."
+                  </div>
+                  <div class="reviews__author">Jon Doe</div>
+                </div>
+              </div>
+
+            </div><!--data-slider-->
+          </div><!--reviews-->
 
         </div>
       </div>
@@ -831,6 +861,7 @@
   </div> <!--page-->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="assets/js/app.js"></script>
 
   </body>
