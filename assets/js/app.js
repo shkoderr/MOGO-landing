@@ -30,9 +30,12 @@ $(function() {
 
     var $this = $(this),
         blockId = $this.data('scroll'),
-        blockOffset = $(blockId).offset().top;
+        blockOffset = $(blockId).offset().top - 30;
 
         $("#nav a").removeClass("active");
+        $this.addClass("active");
+
+        $("#slider__inner a").removeClass("active");
         $this.addClass("active");
         
         $("html, body").animate({
@@ -47,6 +50,24 @@ $(function() {
 
     $(this).toggleClass("active");
     $("nav").toggleClass("active");
+  });
+
+
+  //Collapse menu//
+  $(".nav__link").click(function(event) {
+
+    $(".nav")
+      .removeClass("active");
+    $(".nav-toggle")
+      .removeClass("active");
+  });
+
+  $(".header__logo").click(function(event) {
+
+    $(".nav")
+      .removeClass("active");
+    $(".nav-toggle")
+      .removeClass("active");
   });
 
 
@@ -66,7 +87,7 @@ $(function() {
   /* Slider */
   $("[data-slider]").slick({
     infinity: true,
-    fade: false,
+    fade: true,
     slidesToShow: 1,
     slidesToScroll: 1
 
