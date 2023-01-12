@@ -68,6 +68,14 @@ $(function() {
       .removeClass("active");
     $(".nav-toggle")
       .removeClass("active");
+
+  });
+
+  $(document).on('mouseup', function(e){
+    $(".nav")
+    .removeClass("active");
+  $(".nav-toggle")
+    .removeClass("active");
   });
 
 
