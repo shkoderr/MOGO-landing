@@ -74,7 +74,14 @@ $(function() {
   $(document).on('mouseup', function(e){
     $(".nav")
     .removeClass("active");
-  $(".nav-toggle")
+    $(".nav-toggle")
+    .removeClass("active");
+  });
+
+  $(document).on('touchstart', function(e){
+    $(".nav")
+    .removeClass("active");
+    $(".nav-toggle")
     .removeClass("active");
   });
 
