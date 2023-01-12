@@ -310,6 +310,7 @@ hr {
     font-size: 18px;
     color: #fff;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .slider__item.active {
@@ -333,12 +334,17 @@ hr {
 .slider__num {
     font-size: 24px;
     font-weight: 700;
-    text-decoration: none;
     color: #fff;
 }
 
 .slider__num hover {
   cursor: pointer;
+}
+
+.slider__text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 /*Section*/
