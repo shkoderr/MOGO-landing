@@ -2,6 +2,7 @@ $(function() {
 
   var header = $("#header"),
       introH = $("#intro").innerHeight(),
+      navbarH = $("#header").innerHeight(),
       scrollOffset = $(window).scrollTop();
 
     /* Fixed Header */
@@ -27,10 +28,10 @@ $(function() {
   /* Smooth scroll */
   $("[data-scroll]").on("click", function(event) {
     event.preventDefault();
-
+    
     var $this = $(this),
         blockId = $this.data('scroll'),
-        blockOffset = $(blockId).offset().top - 30;
+        blockOffset = $(blockId).offset().top - navbarH;
 
         $("#nav a").removeClass("active");
         $this.addClass("active");
@@ -41,7 +42,13 @@ $(function() {
         $("html, body").animate({
           scrollTop: blockOffset
         }, 500);
+
   });
+
+
+
+
+
 
 
   /* Menu nav toggle*/
